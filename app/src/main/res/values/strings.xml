@@ -1,3 +1,27 @@
 <resources>
     <string name="app_name">ListPlanetasApp</string>
+
+    <string-array name="planetas_array">
+        <item>Seleccionar</item>
+        <item>Mercurio</item>
+        <item>Venus</item>
+        <item>Tierra</item>
+        <item>Marte</item>
+        <item>Jupiter</item>
+        <item>Saturno</item>
+        <item>Urano</item>
+        <item>Neptuno</item>
+    </string-array>
+
+    <string-array name="desripcion_planetas">
+        <item></item>
+        <item>Mercurio es el planeta más pequeño del sistema solar y el más cercano al Sol.</item>
+        <item>Venus es el segundo planeta del sistema solar en orden de distancia desde el Sol.</item>
+        <item>La tierra es el tercer planeta desde el Sol y el único objeto astronómico conocido por albergar vida.</item>
+        <item>Marte es el cuarto planeta del sistema solar en orden de distancia desde el Sol.</item>
+        <item>Jupiter es el quinto planeta del sistema solar y el mayor de los planetas.</item>
+        <item>Saturno es el sexto planeta del sistema solar y el segundo en tamaño y masa después de Júpiter.</item>
+        <item>Urano es el séptimo planeta del sistema solar.</item>
+        <item>Neptuno es el octavo y último planeta del sistema solar.</item>
+    </string-array>
 </resources>
