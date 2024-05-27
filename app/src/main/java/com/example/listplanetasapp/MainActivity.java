@@ -7,6 +7,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -46,13 +47,26 @@ public class MainActivity extends AppCompatActivity {
                 String[] planetaDescripcion = getResources().getStringArray(R.array.desripcion_planetas);
                 descripcion.setText(planetaDescripcion[position]);
 
+                Toast.makeText(parent.getContext(), (String) parent.getItemAtPosition(position), Toast.LENGTH_SHORT).show();
+
             }
 
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                descripcion.setText("No has seleccionado ningún planeta");
+
             }
         });
 
+        spinner.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                int position = spinner.getSelectedItemPosition();
+                if (position != AdapterView.INVALID_POSITION) {
+                    Toast.makeText(getApplicationContext(), "Long click en: " + nombresdeplanetas[position], Toast.LENGTH_LONG).show();
+                    return true;
+                }
+                return false;
+            }
+        });
     }
 }
